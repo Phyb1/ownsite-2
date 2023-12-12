@@ -1,0 +1,13 @@
+{% extends 'SiteApp/base.html' %}
+{% block title %}
+Blogs
+{% endblock title %}
+{% block content %}
+<h2 class='welcome'>Blogs</h2>
+<ul>
+{% for blog in data  %}
+<li>Blog Title: {{blog.title}}:<small>{{blog.puDate}}</small></li>
+<p>{{blog.text|slice:':150'}}...<a href="{% url 'SiteApp:blogReader' blog.id %}">read more</a></p>
+{% endfor %}
+</ul>
+{% endblock content %}

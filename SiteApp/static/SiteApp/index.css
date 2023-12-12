@@ -1,0 +1,70 @@
+.content{
+    background-color: rgb(135, 206, 235);
+    margin: 0;
+    font-size: medium;
+}
+.siteWrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: skyblue;
+    color:gold;
+}
+
+.siteNav{ 
+    background-color: rgb(181, 215, 228);
+    color: rgb(214, 58, 58);
+    display: inline-flex;
+    font-size: 1.2rem;
+    height: 3ch;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1000;
+    padding: 0.4em;
+    text-decoration: none;
+   
+}
+.siteNavRight{
+    text-align: right;
+    padding: 0.4em;
+}
+
+.siteNavLeft{
+    text-align: left;
+    padding: 0.4em;
+}
+
+.bottomFooter{
+    text-align: center;
+    background-color: silver;
+}
+.navLinks{
+    background-color: #c7b8b86b;
+    color: rgb(204, 159, 92);
+    text-decoration: none;
+    padding: 5px;
+}
+.contentBody{
+    padding: 1rem;
+}
+
+.welcome{
+    text-align:center;
+}
+.service{
+    text-align:center; 
+}
+.serviceList{
+    list-style-type: none;
+    text-align: center;
+}
+#callToAction{
+    background-color: #7cb0d7;
+    color: rgb(221 22 22);
+    padding: 1px;
+    text-decoration: underline;
+    font-size: 0.75em;
+}
+.comment{
+    color:coral;
+}

@@ -1,0 +1,27 @@
+{% extends 'SiteApp/base.html' %}
+{% block title %}{{data.title}}{% endblock title %}
+{% block content %}
+<h3><p>{{data.title}}<p></h3>
+<p><small>Published on {{data.pubDate}}</small></p>
+<p>{{data.text}}</p>
+<ul>
+{% for reply  in comments %}
+<li>{{reply.text}} <small class='comment'> comment made by {{reply.author}}: on {{reply.date}} </small></li>
+{% empty %}
+<p> Be the first to add a comment<p>
+{% endfor %}
+</ul>
+<p><a href="{% url 'SiteApp:comment' data.id %}">add comment</a></p>
+<p>
+<a href="{% url 'SiteApp:blogReader' next %}">Next</a>
+<a href="{% url 'SiteApp:blogReader' prev %}">Prev</a>
+</p>{% endblock content %}
+{% block content2 %}
+{% if form %}
+<form action="{% url 'SiteApp:comment' data.id %}" method="POST">
+{% csrf_token %}
+{{form.as_p}}
+<button name="submit">Submit Comment</button>
+</form>
+{% endif %}
+{% endblock content2 %}

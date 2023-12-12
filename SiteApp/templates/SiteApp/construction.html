@@ -1,0 +1,13 @@
+{% extends 'SiteApp/base.html' %}
+         {% block title %}Page coming soon>>{% endblock title %}%}/
+{% block content %}
+<p>Page under contruction coming soon</p>
+<p> it offers the following features</p>
+<ul>
+{% for i in data  %}
+    <li>{{i}}</li>
+{%empty%}
+<p>no data available</p>
+{% endfor %}
+</ul>
+{% endblock content %}

@@ -1,0 +1,15 @@
+SiteApp/__pycache__/__init__.cpython-38.pyc
+SiteApp/__pycache__/admin.cpython-38.pyc
+SiteApp/__pycache__/apps.cpython-38.pyc
+SiteApp/__pycache__/models.cpython-38.pyc
+SiteApp/migrations/__pycache__/__init__.cpython-38.pyc
+db.sqlite3
+OwnSite/__pycache__/__init__.cpython-38.pyc
+OwnSite/__pycache__/settings.cpython-38.pyc
+OwnSite/__pycache__/urls.cpython-38.pyc
+OwnSite/__pycache__/wsgi.cpython-38.pyc
+SiteApp/migrations/__pycache__/0002_blogs.cpython-38.pyc
+SiteApp/__pycache__/forms.cpython-38.pyc
+SiteApp/__pycache__/urls.cpython-38.pyc
+SiteApp/__pycache__/views.cpython-38.pyc
+SiteApp/__pycache__/views.cpython-38.pyc

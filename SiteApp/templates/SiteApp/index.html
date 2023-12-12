@@ -1,0 +1,18 @@
+{% extends 'SiteApp/base.html' %}
+{% block title %}Phyb: Homepage{% endblock title %}
+{% block content %}
+<p class='welcome'><h2>Hi! I  design and develop effective digital solutions</h2></p>
+<div class='service'>
+<p>For example but not limited to:</p>
+<ul class='serviceList'> 
+    <li>Websites </li>
+    <li>Digital marketing</li>
+    <li>Chatbots</li>
+    <li>Webapps</li>
+    <li>REST infrastructure</li>
+    <li>See more <a href="{% url 'SiteApp:about'%}">here</a></li> </p>
+</ul>
+</div>
+<p>I enjoy building everything from static sites to interactive dynamic apps.
+If you need a digital presence or looking to hire get in touch with me <a href="{% url 'SiteApp:contact' %}">here</a></p>
+{% endblock content %}

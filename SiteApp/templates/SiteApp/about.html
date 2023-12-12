@@ -1,0 +1,27 @@
+{% extends 'SiteApp/base.html' %}
+{% block title %}
+About me
+{% endblock title %}
+{% block content %}
+<div class='intro'>
+<h2>Looking for a web developer?</h2>
+<span id='callToAction'>Send me an Email</span>
+<div>
+<p class='welcome'>Hi! I am Phyb from Mazowe, Zimbabwe</p>
+<p>I am an entry level full stack web developer and programmer.</p>
+<p>I have a diverse set of skills ranging from :
+<ul>
+<li>front-end (user-centred design, HTML+CSS+Javascript)</li>
+<li>back-end (Node.js, Django and its associated stack:SQLite/PostGres, UWSGI/Gunicorn)</li>
+<li>Python(some of its leading frameworks such as pandas, numpy etc) <li></ul></p>
+
+ <p>
+    You can see some of the things i have worked on my <a href="{% url 'SiteApp:projects'%}">projects page</a> 
+    and my <a href='link to github page showing repositires'>Github page</a>
+ </p>
+ <p>
+    You can engage with me on <a href='whatsapp msg link'>WhatsApp</a>
+    or <a href='twiiter profile link'>Twitter</a>.If you are intrested in working together don't hesitate to 
+   <a href="{% url 'SiteApp:contact' %}"> contact me.</a>
+ </p>
+{% endblock content %}

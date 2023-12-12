@@ -1,0 +1,16 @@
+{% extends 'SiteApp/base.html' %}
+{% block title %}Projects{% endblock title %}t
+{% block content %}
+<h2 class='welcome'>Projects</h2>
+<ul>
+{% for project in data %}
+<h4><li>Project name : {{project.name}}</li></h4>
+<ul>
+    <li><a href="{{poject.git}}">Visit Project's repository</li>
+    <li><a href="{{project.url}}">See Project</a></li>
+    <li>Project started on :{{project.startDate}}</li>
+    <li>Project completed on :{{project.finishDate}}</li>
+</ul>
+{% endfor %}
+</ul>
+{% endblock content %}
