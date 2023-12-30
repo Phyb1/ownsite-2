@@ -1,18 +1,77 @@
 {% extends 'SiteApp/base.html' %}
 {% block title %}Phyb: Homepage{% endblock title %}
 {% block content %}
-<p class='welcome'><h2>Hi! I  design and develop effective digital solutions</h2></p>
-<div class='service'>
-<p>For example but not limited to:</p>
-<ul class='serviceList'> 
-    <li>Websites </li>
-    <li>Digital marketing</li>
-    <li>Chatbots</li>
-    <li>Webapps</li>
-    <li>REST infrastructure</li>
-    <li>See more <a href="{% url 'SiteApp:about'%}">here</a></li> </p>
-</ul>
+<h2 class='display-2'>Welcome to Phyb's Web Studio!</h2>
+</p class= 'lead'>Crafting Digital Experiences, One Pixel at a Time.</p>
+<p>We offer the following services</p>
+<div class="card">
+    <div class="card-header">
+        Website Development
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">
+        Unleash Your Online Potential with Tailor-Made Websites!
+      </h5>
+      <p class="card-text">
+
+        🚀 Elevate your brand with visually stunning and seamlessly functional websites. From eye-catching designs to smooth 
+        user experiences, we transform ideas into captivating online realities. Your story, beautifully told.</p>
+      <a href="#" class="btn btn-primary">Order Yours</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Digital Marketing
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">🚀 Boost Your Brand, Dominate the Digital Space!</h5>
+      <p class="card-text">Strategic. Impactful. Results-Driven. Our digital marketing expertise propels your brand to new heights. From SEO strategies to social media mastery, we've got the winning formula to turn clicks into clients and views into victories.
+    </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Chatbots
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">🤖 Intelligent Conversations, Automated Brilliance!</h5>
+      <p class="card-text">
+        Engage, Convert, Delight – 24/7. Our custom chatbots redefine customer interaction. From answering queries to driving conversions, let your business speak even when you're offline. It's not just automation; it's a conversation revolution.      
+        </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      Web apps
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">⚙️ Powerful Web Apps for Powerful Businesses!</h5>
+      <p class="card-text">
+        Transform your business processes with dynamic web applications. Seamlessly integrated, user-friendly, and designed to enhance efficiency. Your digital toolkit just got an upgrade – say goodbye to the ordinary, embrace the extraordinary.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      REST iInfrastructure
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">🌐 Solid Foundations for Future Growth!</h5>
+      <p class="card-text">
+        Build on Robust Infrastructure. Our REST architecture ensures scalable and reliable foundations for your digital journey. Smooth, secure, and ready to handle your growing demands. It's not just about today; it's about building for tomorrow.
+        </p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
+
 </div>
-<p>I enjoy building everything from static sites to interactive dynamic apps.
-If you need a digital presence or looking to hire get in touch with me <a href="{% url 'SiteApp:contact' %}">here</a></p>
+<p>
+    <em>Ready to Ignite Your Digital Presence? <a href="{% url 'SiteApp:contact' %}" > Let's Talk! </a> </em>
+    🌐  Phyb- Your Trusted Partner in Digital Evolution.</p>
 {% endblock content %}

@@ -8,48 +8,56 @@
         {% block title %} {% endblock title %}
         </title>
     <meta name="HandheldFriendly" content="True">
-   <link rel='stylesheet' href="{%  static 'SiteApp/index.css' %}">
+   <link rel='stylesheet' href="{%  static 'SiteApp/index2.css' %}">
    <link rel='stylesheet' href="{% static 'SiteApp/bootstrap.min.css' %}">
     </head>
-    <body class='content'>
-    <nav class='siteNav'>
-   <!----> <span class='siteNavLeft'>
-        <a id='home' class='navLinks' href="/">Phyb</a>
-                <ul hidden>
-                <li>classic website</li>
-                <li>Dynamic website</li>
-                <li>web Applications</li>
-                <li>digital infrastructure and development</li>
-                <li>Digital marketing</li>
-                <li>Other</li>
-            </ul>
-    </span>
-        <span class='siteNavRight'>
-            <a id="about" class='navLinks' href="{% url 'SiteApp:about' %}">About</a>
-            <a id= "projects" class='navLinks' href="{% url 'SiteApp:projects' %}">Projects</a>
-                <ul hidden>
-                <li>Github repositires</li>
-                <li>Samples</li>
-                <li>Testimonials</li>
-            </ul>  
-            <a id='bog' class='navLinks' href="{% url 'SiteApp:blogIndex' %}">Blogs</a>    
-        </span>        
-    </nav>
-    <div>
-      <main class='contentBody'>
+<body>   
+    
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Phyb</a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarsExample04" style="">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'SiteApp:about'%}">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'SiteApp:projects'%}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'SiteApp:blogIndex'%}">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ <main>
        {% block content %}{% endblock content %}
        {% block content2 %}{% endblock content2 %}
        </main>
-       <footer class='bottomFooter'>
-       <nav class='footerNav'>
-       <p>Contact me: <a id='order'> Facebook </a>|
-        <a id='archives'> Twitter </a>|
-        <a id = 'contact'> Telegram </a>|
-        <a id='archives'> Discord </a>
-       </nav>
-        <p> <small>&copy</small> A Phyb<small><sup>&reg</sup></small> production</p>
+       <footer>
+       <ul class="bg-dark nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">facebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-re " href="#">twitter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Telegram</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Discord</a>
+        </li>
+      </ul>
+ 
+        <p class='text-centre'> <small>&copy</small> A Phyb<small><sup>&reg</sup></small> production</p>
        </footer>
        </div>
-       <script src="{% static 'SiteApp/bootstrap.bundle.min.js' %}"
-<body>
+            <script src="{% static 'SiteApp/bootstrap.bundle.min.js' %}">
+           
+            </body>
 </html>
