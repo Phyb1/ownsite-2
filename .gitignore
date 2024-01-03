@@ -13,3 +13,9 @@ SiteApp/__pycache__/forms.cpython-38.pyc
 SiteApp/__pycache__/urls.cpython-38.pyc
 SiteApp/__pycache__/views.cpython-38.pyc
 SiteApp/__pycache__/views.cpython-38.pyc
+SiteApp/__pycache__/admin.cpython-310.pyc
+SiteApp/__pycache__/forms.cpython-310.pyc
+SiteApp/__pycache__/models.cpython-310.pyc
+SiteApp/__pycache__/urls.cpython-310.pyc
+SiteApp/__pycache__/views.cpython-310.pyc
+SiteApp/migrations/__pycache__/0004_alter_blogs_options_alter_projects_options_and_more.cpython-310.pyc

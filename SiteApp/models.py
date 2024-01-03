@@ -2,9 +2,17 @@ from django.db import models
 from django.utils import timezone
 
 class Services(models.Model):
-    '''services table'''
+    '''services order table'''
     name = models.CharField(max_length=20)
-    Orderdate = models.DateField()
+    email = models.EmailField(max_length=254)
+    order = [
+        ('Website', 'website'),
+        ('chatbot', 'chatbot'),
+        ('digiMarketing', 'digital marketing'),
+        ('restApi', 'restApi'),
+    ]
+    order_type = models.CharField(max_length=20, choices=order)
+    Orderdate = models.DateField(auto_now_add=True)
     DueDate = models.DateField()
 
     class Meta:

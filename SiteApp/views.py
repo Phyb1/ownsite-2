@@ -1,7 +1,7 @@
 from django.http import request
 from django.shortcuts import get_object_or_404, render
 from django.utils import timezone
-from SiteApp.forms import CommentForm
+from SiteApp.forms import CommentForm, ServicesForm
 from .models import Blogs, Projects, Services, Comment
 
 def index(request):
@@ -59,3 +59,14 @@ def about(request):
 def contact(request):
     '''serving the contact page'''
     return render(request, 'SiteApp/contact/html')
+
+def order(request):
+     if request.method != 'POST':
+        form = ServicesForm()
+     else:
+        form = ServicesForm(data=request.POST)
+        if form.is_valid():            
+            new_form = form.save()
+            return render(request, 'SiteApp/order.html', context)
+     context = {'form':form}
+     return render(request, 'SiteApp/blog.html', context)
