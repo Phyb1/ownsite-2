@@ -1,5 +1,5 @@
 from django.http import request
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
 from django.utils import timezone
 from SiteApp.forms import CommentForm, ServicesForm
 from .models import Blogs, Projects, Services, Comment
@@ -67,6 +67,6 @@ def order(request):
         form = ServicesForm(data=request.POST)
         if form.is_valid():            
             new_form = form.save()
-            return render(request, 'SiteApp/order.html', context)
+            return redirect('SiteApp:index')
      context = {'form':form}
-     return render(request, 'SiteApp/blog.html', context)
+     return render(request, 'SiteApp/order.html', context)
