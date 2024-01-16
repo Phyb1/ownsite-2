@@ -1,4 +1,3 @@
-{% load  static  %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,9 +7,7 @@
         {% block title %} {% endblock title %}
         </title>
     <meta name="HandheldFriendly" content="True">
-   <link rel='stylesheet' href="{%  static 'SiteApp/index2.css' %}">
-   <link rel='stylesheet' href="{% static 'SiteApp/bootstrap.min.css' %}">
-    </head>
+% load bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}    </head>
 <body>   
     
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -41,23 +38,21 @@
        <footer>
        <ul class="bg-dark nav justify-content-center">
         <li class="nav-item">
-          <a class="nav-link active" href="#">facebook</a>
+          <a class="nav-link active" href="https://www.facebook.com/phybinc ">Facebook</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-re " href="#">twitter</a>
+          <a class="nav-link text-re "href=https://twitter.com/phybeon">Twitter</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="#">Telegram</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="">Discord</a>
+          <a class="nav-link" href="http://www.linkedin.com/in/phyb">LinkedIn</a>
         </li>
       </ul>
  
         <p class='text-centre'> <small>&copy</small> A Phyb<small><sup>&reg</sup></small> production</p>
        </footer>
        </div>
-            <script src="{% static 'SiteApp/bootstrap.bundle.min.js' %}">
+            
            
             </body>
 </html>
